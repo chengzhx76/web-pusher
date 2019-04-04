@@ -4,8 +4,8 @@ import router from './router'
 
 Vue.config.productionTip = false
 
-import * as filters from './filters' // 全局过滤器
-import './styles/index.scss'
+import * as filters from './filters'
+import './style/index.scss'
 
 Object.keys(filters).forEach(key => {
     Vue.filter(key, filters[key])

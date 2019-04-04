@@ -1,15 +1,10 @@
+const path = require('path');
 module.exports = {
-    // 选项...
-    devServer: {
-        proxy: {
-            '/api': {
-                target: '<url>',
-                ws: true,
-                changeOrigin: true
-            },
-            '/foo': {
-                target: '<other_url>'
-            }
-        }
+  configureWebpack: {
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, 'src/')
+      }
     }
+  }
 }
