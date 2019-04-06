@@ -1,0 +1,266 @@
+@import './variables.scss';
+
+@mixin height-rpx-width-100($height) {
+  height: #{$height}px;
+  width: $percent-100;
+}
+@mixin height-rpx-width-percent($height, $width) {
+  height: #{$height}px;
+  width: $width;
+}
+@mixin height-percent-width-100($height) {
+  height: $height;
+  width: $percent-100;
+}
+@mixin height-100-width-rpx($width) {
+  height: $percent-100;
+  width: #{$width}px;
+}
+@mixin height-100-width-percent($width) {
+  height: $percent-100;
+  width: $width;
+}
+@mixin height-percent-width-percent($height, $width) {
+  height: $height;
+  width: $width;
+}
+@mixin height-width($height, $width) {
+  height: #{$height}px;
+  width: #{$width}px;
+}
+
+@mixin height-width-100 {
+  height: $percent-100;
+  width: $percent-100;
+}
+
+@mixin height-width-text-center($height, $width) {
+  height: #{$height}px;
+  width: #{$width}px;
+  text-align: center;
+  line-height: #{$height}px;
+}
+
+@mixin height-width-percent-text-center($height, $width:100%) {
+  height: #{$height}px;
+  width: $width;
+  text-align: center;
+  line-height: #{$height}px;
+}
+@mixin height-width-percent-lineHeight-text-center($height, $lineHeight, $width:100%) {
+  height: #{$height}px;
+  width: $width;
+  text-align: center;
+  line-height: #{$lineHeight}px;
+}
+
+@mixin height-width-line-height-text-center($height, $width, $lineHeight) {
+  height: #{$height}px;
+  width: #{$width}px;
+  text-align: center;
+  line-height: #{$lineHeight}px;;
+}
+@mixin height-width-percent-text($height, $width, $position) {
+  height: #{$height}px;
+  width: $width;
+  text-align: $position;
+  line-height: #{$height}px;
+}
+@mixin height-width-rpx-text($height, $width, $position) {
+  height: #{$height}px;
+  width: #{$width}px;
+  text-align: $position;
+  line-height: #{$height}px;
+}
+@mixin height-width-rpx-text-line($height, $width, $lineHeight, $position) {
+  height: #{$height}px;
+  width: #{$width}px;
+  text-align: $position;
+  line-height: #{$lineHeight}px;
+}
+@mixin height-width-percent-text-line($height, $width, $position, $lineHeight) {
+  height: #{$height}px;
+  width: $width;
+  text-align: $position;
+  line-height: #{$lineHeight}px;
+}
+@mixin height-width-100-text-line($height, $position, $lineHeight) {
+  height: #{$height}px;
+  width: $percent-100;
+  text-align: $position;
+  line-height: #{$lineHeight}px;
+}
+
+@mixin height-width-100-text($height, $position) {
+  height: #{$height}px;
+  width: $percent-100;
+  text-align: $position;
+  line-height: #{$height}px;
+}
+
+@mixin height-text($height, $position) {
+  height: #{$height}px;
+  text-align: $position;
+  line-height: #{$height}px;
+}
+
+@mixin height-line($height, $lineHeight:$height) {
+  height: #{$height}px;
+  line-height: #{$lineHeight}px;
+}
+@mixin height-line-center($height, $lineHeight:$height) {
+  height: #{$height}px;
+  line-height: #{$lineHeight}px;
+  text-align: center;
+}
+
+@mixin justify-align-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@mixin justify-start-align-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+@mixin justify-space-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@mixin justify-space-between-align-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+@mixin justify-end-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@mixin justify-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@mixin column-align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin border-top-width($width) {
+  border-top: #{$width}rpx solid $borderColor;
+}
+
+@mixin border-bottom-width($width) {
+  border-bottom: #{$width}rpx solid $borderColor;
+}
+@mixin border-top-bottom-width($width) {
+  border-top: #{$width}rpx solid $borderColor;
+  border-bottom: #{$width}rpx solid $borderColor;
+}
+
+@mixin border-left-width($width) {
+  border-left: #{$width}rpx solid $borderColor;
+}
+
+@mixin border-right-width($width) {
+  border-right: #{$width}rpx solid $borderColor;
+}
+
+@mixin border-top($width, $color) {
+  border-top: #{$width}rpx solid $color;
+}
+@mixin border-bottom($width, $color) {
+  border-bottom: #{$width}rpx solid $color;
+}
+
+@mixin border($width) {
+  border: #{$width}rpx solid $borderColor;
+}
+@mixin border-color($width, $color) {
+  border: #{$width}rpx solid $color;
+}
+@mixin border-none($position) {
+  border-#{$position}: none;
+}
+
+@mixin box-shadow {
+  box-shadow: 1rpx 1rpx 10rpx $boxShadowColor;
+}
+
+@mixin border-radius($val) {
+  border-radius: #{$val}px;
+}
+@mixin border-radius-percent($val) {
+  border-radius: $val;
+}
+@mixin border-radius-top($val) {
+  border-top-left-radius: #{$val}px;
+  border-top-right-radius: #{$val}px;
+}
+@mixin border-radius-left($val) {
+  border-top-left-radius: #{$val}px;
+  border-bottom-left-radius: #{$val}px;
+}
+@mixin border-radius-right($val) {
+  border-top-right-radius: #{$val}px;
+  border-bottom-right-radius: #{$val}px;
+}
+@mixin border-radius-bottom($val) {
+  border-bottom-right-radius: #{$val}px;
+  border-bottom-left-radius: #{$val}px;
+}
+
+@mixin over-hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin arrow($val, $right, $top) {
+  content: " ";
+  display: inline-block;
+  height: #{$val}px;
+  width: #{$val}px;
+  border-top: 4rpx solid $arrowColor;
+  border-right: 4rpx solid $arrowColor;
+  transform: rotate(45deg);
+  position: absolute;
+  right: #{$right}px;
+  top: #{$top}px;
+}
+
+@mixin arrow-bottom-left($val, $right, $top) {
+  content: " ";
+  display: inline-block;
+  height: #{$val}px;
+  width: #{$val}px;
+  border-right: 4rpx solid $arrowColor;
+  border-bottom: 4rpx solid $arrowColor;
+  transform: rotate(45deg);
+  position: relative;
+  right: #{$right}px;
+  top: #{$top}px;
+  margin-left: 20px;
+}
+

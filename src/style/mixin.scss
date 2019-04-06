@@ -1,0 +1,40 @@
+@mixin height-px-width-100($height) {
+  height: #{$height}px;
+  width: $scale-100;
+}
+@mixin height-px-width-scale($height, $width) {
+  height: #{$height}px;
+  width: $width;
+}
+@mixin height-scale-width-scale-100($height) {
+  height: $height;
+  width: $scale-100;
+}
+@mixin height-scale-100-width-px($width) {
+  height: $scale-100;
+  width: #{$width}px;
+}
+@mixin height-scale-100-width-scale($width) {
+  height: $scale-100;
+  width: $width;
+}
+@mixin height-scale-width-scale($height, $width) {
+  height: $height;
+  width: $width;
+}
+@mixin height-width-px($height, $width) {
+  height: #{$height}px;
+  width: #{$width}px;
+}
+
+@mixin height-width-scale-100 {
+  height: $scale-100;
+  width: $scale-100;
+}
+
+@mixin justify-align-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
