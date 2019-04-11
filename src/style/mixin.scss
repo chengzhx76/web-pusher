@@ -22,7 +22,7 @@
   height: $height;
   width: $width;
 }
-@mixin height-width-px($height, $width) {
+@mixin height-width-px($height, $width:$height) {
   height: #{$height}px;
   width: #{$width}px;
 }
@@ -78,6 +78,12 @@
 @mixin column-align-center {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+@mixin justify-column-align-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 @mixin align-center {
