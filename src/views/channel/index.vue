@@ -16,14 +16,6 @@
                 <span class="text">gQH68DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzA</span>
               </div>
             </div>
-            <div class="channel">
-              <div class="name">产品1</div>
-              <div class="key">
-                <span class="title">sendKey：</span>
-                <span class="text">gQH68DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzA</span>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
