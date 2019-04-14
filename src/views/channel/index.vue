@@ -10,11 +10,15 @@
           </div>
           <div class="channels">
             <div class="channel">
+              <div class="left">
+
+              </div>
               <div class="name">产品1</div>
               <div class="key">
                 <span class="title">sendKey：</span>
                 <span class="text">gQH68DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzA</span>
               </div>
+              <div class="right">删除</div>
             </div>
           </div>
         </div>
