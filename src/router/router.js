@@ -9,10 +9,26 @@ export const loginRouter = {
 export const channelRouter = {
     path: '/channel',
     name: 'channel',
-    meta: {
-        title: '通道管理'
-    },
-    component: () => import('@/views/channel')
+    redirect: '/channel/list',
+    component: () => import('@/views/channel/layout'),
+    children: [
+      {
+        path: 'list',
+        name: 'channel_list',
+        meta: {
+          title: '列表'
+        },
+        component: () => import('@/views/channel/list')
+      },
+      {
+        path: 'setting',
+        name: 'channel_setting',
+        meta: {
+          title: '设置'
+        },
+        component: () => import('@/views/channel/setting')
+      },
+    ]
 }
 
 export const routers = [

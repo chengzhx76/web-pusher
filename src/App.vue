@@ -19,6 +19,9 @@
 <style rel="stylesheet/scss" lang="scss" scoped>
   @import "@/style/mixin.scss";
   @import "@/style/variables.scss";
+  #app {
+    background: #F7F5F6;
+  }
   .header {
     @include height-px-width-100(60);
     @include justify-align-center;
