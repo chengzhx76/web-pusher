@@ -14,3 +14,18 @@ body {
   height: 100%;
   width: 100%;
 }
+input {
+  outline:none;
+  background:transparent;
+  outline:medium;
+}
+*:focus {
+  outline: none;
+  background-color: transparent;
+}
+::selection {
+  background:transparent;
+}
+::-moz-selection{
+  background:transparent;
+}
