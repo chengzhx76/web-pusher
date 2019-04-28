@@ -13,7 +13,7 @@
         </div>
       </form>
       <div class="button-group">
-
+        <button class="submit"></button>
       </div>
     </div>
     <div class="qrcode">
