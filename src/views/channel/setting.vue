@@ -3,11 +3,11 @@
     <div class="base">
       <div class="title">基本信息</div>
       <form class="info">
-        <div class="input input-name">
+        <div class="input">
           <label for="name">通道名字</label>
           <input type="text" id="name">
         </div>
-        <div class="input input-email">
+        <div class="input">
           <label for="email">联系邮箱</label>
           <input type="text" id="email">
         </div>
