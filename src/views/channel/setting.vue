@@ -8,7 +8,7 @@
           <input type="text" id="name">
         </div>
         <div class="input">
-          <label for="email">联系邮箱</label>
+          <label for="email">Email</label>
           <input type="text" id="email">
         </div>
       </form>
